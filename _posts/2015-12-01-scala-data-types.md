@@ -13,72 +13,23 @@ In Scala, all values are objects. There are no primitives types like in Java.
 This implies that in Scala you can call methods/functions on for instance integers.
 
 Available data types are:
-<table class="pure-table pure-table-bordered">
-    <thead>
-        <tr>
-            <th>Data type</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="pure-table-odd">
-            <td>Byte</td>
-            <td>8 bit signed value</td>
-        </tr>
-        <tr>
-            <td>Short</td>
-            <td>16 bit signed value</td>
-        </tr>
-        <tr class="pure-table-odd">
-            <td>Int</td>
-            <td>32 bit signed value</td>
-        </tr>
-        <tr>
-            <td>Long</td>
-            <td>64 bit signed value</td>
-        </tr>
-        <tr class="pure-table-odd">
-            <td>Float</td>
-            <td>32 bit IEEE 754 single-precision float</td>
-        </tr>
-        <tr>
-            <td>Double</td>
-            <td>64 bit IEEE 754 double-precision float</td>
-        </tr>
-        <tr class="pure-table-odd">
-            <td>Char</td>
-            <td>16 bit unsigned Unicode character</td>
-        </tr>
-        <tr>
-            <td>String</td>
-            <td>A sequence of Chars</td>
-        </tr>
-        <tr class="pure-table-odd">
-            <td>Boolean</td>
-            <td>Either the literal true or the literal false</td>
-        </tr>
-        <tr>
-            <td>Unit</td>
-            <td>Corresponds to no value (void in Java)</td>
-        </tr>
-        <tr class="pure-table-odd">
-            <td>Null</td>
-            <td>null or empty reference</td>
-        </tr>
-        <tr>
-            <td>Nothing</td>
-            <td>The subtype of every other type; includes no values</td>
-        </tr>
-        <tr class="pure-table-odd">
-            <td>Any</td>
-            <td>The supertype of any type; any object is of type Any</td>
-        </tr>
-        <tr>
-            <td>AnyRef</td>
-            <td>The supertype of any reference type</td>
-        </tr>
-    </tbody>
-</table>
+
+| Data type     | Description          |
+| ------------- | -------------        |
+| Byte          | 8 bit signed value   |
+| Short         | 16 bit signed value  |
+| Int           | 32 bit signed value  |
+| Long          | 64 bit signed value  |
+| Float         | 32 bit IEEE 754 single-precision float |
+| Double        | 64 bit IEEE 754 double-precision float |
+| Char          | 16 bit unsigned Unicode character |
+| String        | A sequence of Chars |
+| Boolean       | Either the literal true or the literal false |
+| Unit          | Corresponds to no value (void in Java) |
+| Null          | null or empty reference |
+| Nothing       | The subtype of every other type; includes no values |
+| Any           | The supertype of any type; any object is of type Any |
+| AnyRef        | The supertype of any reference type |
 
 Value declarations
 ------------------

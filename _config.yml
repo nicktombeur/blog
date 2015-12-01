@@ -11,4 +11,8 @@ github_username:  nicktombeur
 # Build settings
 markdown: kramdown
 
+kramdown:
+  input: GFM
+
+
 paginate: 10
