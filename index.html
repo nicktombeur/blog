@@ -9,7 +9,7 @@ layout: default
     {% for post in paginator.posts %}
     <section class="post">
         <header class="post-header">
-            <img class="post-avatar" src="/assets/{{ post.img }}" alt="{{ post.img }}"/>
+            <img class="post-avatar" src="/blog/assets/{{ post.img }}" alt="{{ post.img }}"/>
 
             <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 

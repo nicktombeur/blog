@@ -95,7 +95,7 @@ The [Scala API](http://www.scala-lang.org/api) is a great place to learn Scala.
 The most important thing to notice is that for some classes there is also an object (learn more about this in later posts). 
 You can change from the class to the object or vice versa, by click on the green “C” or blue “O” at the top of the page.
 
-![Scala API](/assets/img/scalaAPI.png)
+![Scala API]({{ site.baseurl }}/assets/img/scalaAPI.png)
 
 Learn more about using the API [here](http://docs.scala-lang.org/overviews/scaladoc/interface.html).
 
