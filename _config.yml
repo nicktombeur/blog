@@ -1,0 +1,14 @@
+# Site settings
+title: Nick Tombeur
+email:
+description: >
+  My personal blog about JVM languages, web development and other programming related subjects.
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
+url: "http://nicktombeur.xyz" # the base hostname & protocol for your site
+twitter_username: nicktombeur
+github_username:  nicktombeur
+
+# Build settings
+markdown: kramdown
+
+paginate: 10

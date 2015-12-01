@@ -1,0 +1,176 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  line-height: 1.7em;
+  color: $secondary-text-color;
+  font-size: 13px;
+  margin: 0 0 200px;
+}
+
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-wrapper {
+  width: 100%;
+  min-height: 12%;
+  z-index: 2;
+  background: $white-color;
+  padding: 2em 5em 0 5em;
+}
+
+.home {
+  margin: 5em;
+}
+
+.page-heading {
+  text-transform: uppercase;
+  color: $divider-color;
+  border-bottom: 1px solid #eee;
+  padding: 0.4em 0;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.post-avatar {
+  border-radius: 50px;
+  float: left;
+  margin-right: 1em;
+  height: 48px;
+  width: 48px;
+}
+
+.post-title {
+  font-size: 2em;
+  a:link, a:visited {
+    text-decoration: none;
+  }
+  a:hover, a:active {
+    text-decoration: underline;
+  }
+  a, a:visited {
+    color: $accent-color;
+    margin-bottom: 0.2em;
+  }
+}
+
+.post-meta {
+  color: $divider-color;
+  font-size: 90%;
+  margin: 0;
+
+  .date {
+    margin-right: 2em;
+  }
+
+  .post-tag {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    font-size: 80%;
+    background-color: green;
+    color: $white-color;
+  }
+
+  .scala {
+    background-color: #DC4A43;
+  }
+}
+
+.pagination {
+  margin-top: 2em;
+  ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+
+    li {
+      display: inline;
+      text-align: center;
+
+      a, em, span {
+        float: left;
+        display: block;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 5px 12px;
+        color: #fff;
+        margin-left: -1px;
+        border: 1px solid transparent;
+        line-height: 1.5;
+        border-color: #ddd;
+        color: #4285F4;
+        background: #fff;
+
+        &:hover {
+          background: #eee;
+        }
+
+        &.active, &:active {
+          border-color: #4285F4;
+          background: #4285F4;
+          color: #fff;
+        }
+      }
+
+      .prev {
+        @include border-radius(6px 0 0 6px);
+      }
+
+      .next {
+        @include border-radius(0 6px 6px 0);
+      }
+    }
+  }
+}
+
+@media (min-width: 48em) {
+  body {
+    font-size: 16px;
+  }
+
+  .content {
+    padding: 1em;
+  }
+
+  .home-menu {
+    text-align: left;
+
+    ul {
+      float: right;
+    }
+  }
+
+  .splash {
+    width: 50%;
+    height: 50%;
+  }
+
+  .splash-head {
+    font-size: 250%;
+  }
+}
+
+@media (min-width: 78em) {
+  .splash-head {
+    font-size: 300%;
+  }
+}
