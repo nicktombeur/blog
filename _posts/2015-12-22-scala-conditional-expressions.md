@@ -13,7 +13,7 @@ tags:
 A condition is an expression that can be __*true*__ or __*false*__.  
 The boolean expressions must be enclosed in parentheses.  
 
-```scala
+{% highlight scala %}
 if (boolean_expression) {
   statement
 } else if (boolean_expression) {
@@ -21,18 +21,18 @@ if (boolean_expression) {
 } else {
   statement
 }
-```
+{% endhighlight %}
 
 The entire __*if*__ itself is an expression. Which means it produces a result.
 This allows you to write conditional expressions as followed:
 
-```scala
+{% highlight scala %}
 val result = if (x > y) x else y
 
 def biggestNumber(x: Int, y: Int): Int = if (x > y) x else y
 
 val x: Boolean = { 10 > 2 }
-```
+{% endhighlight %}
 
 __*Note:*__ notice that you don't have to write _return_ for returning a value, as compared to Java.  
 
@@ -42,19 +42,19 @@ __*Note:*__ notice that you don't have to write _return_ for returning a value, 
 
 Conditions should be written with a space following the defining keyword.
 
-```scala
+{% highlight scala %}
 if (statement) ... else ...
 
 // not
 if(statement) ... else ...
-```
+{% endhighlight %}
 
 When the expression is a pure-functional operation and all statements are single-line expressions you should omit the curly braces.
 Keep the following in mind:
 - If you have an __*else*__ clause, you should omit the braces.
 - If you don't have an __*else*__ clause, surround the contents with curly braces even if the contents are only a single line.
 
-```scala
+{% highlight scala %}
 val result = if (test)
   foo()
 else
@@ -63,7 +63,7 @@ else
 if (test) {
   println("test is true")
 }
-```
+{% endhighlight %}
 
 <br />
 
