@@ -23,6 +23,12 @@ body {
   margin: 0 0 200px;
 }
 
+blockquote {
+  color: $secondary-text-color;
+  border-left: 4px solid #ddd;
+  padding: 0 15px;
+}
+
 .pure-img-responsive {
   max-width: 100%;
   height: auto;
